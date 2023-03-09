@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gimnasia Artística</h1>
+    </header>
+    <button class="boton-navegacion">MENU</button>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="ultimoscampeones.html">Últimos Campeones Olimpicos</a>
+        <a href="suscripcion.html">Suscripción</a>
+    </nav>
+    <h2>Si querés saber más sobre el mundo de la Gimnasia Artística, suscribite a nuestro boletín mensual.</h2>
+    <div class="contenedor-formularios">
+        <section class="formularios">
+            <h3>Completar información:</h3>
+            <form>
+                <div class="datos-personales">
+                    <h4>Datos personales:</h4>
+                    <div>
+                        <label for="nombre">Nombre:</label> 
+                        <input type="text" name="Nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label> 
+                        <input type="text" name="Apellido" id="apellido">
+                    </div>
+                    <div>
+                        <label for="fecha-nacimiento">Fecha de nacimiento:</label> 
+                        <input type="date" name="Fecha" id="fecha-nacimiento">
+                    </div>
+                    <div>
+                        <label for="dni">DNI:</label> 
+                        <input type="text" name="dni" id="dni">
+                    </div>
+                    <div>
+                        <label for="mail">E-Mail:</label> 
+                        <input type="email" name="mail" id="mail"> 
+                    </div>
+                </div>
+                <div class="checkboxs">
+                    <h4>Disciplinas de interés:</h4>
+                    <span><input type="checkbox" name="Disciplinas" id="suelo"> <label for="">Suelo</label></span>
+                    <span><input type="checkbox" name="Disciplinas" id="anillas"> <label for="">Anillas</label> </span>
+                    <span><input type="checkbox" name="Disciplinas" id="barra"> <label for="">Barra</label></span>
+                    <span><input type="checkbox" name="Disciplinas" id="paralelas"> <label for="">Paralelas</label></span>
+                </div>
+                <div >
+                    <p><b> Completa captcha antes de enviar</b></p>
+                    <button type="button" id="botonCaptcha">Actualizar Captcha</button>
+                    <p class="suma-captcha" id="captcha"></p>
+                    <input type="number" id="resultado" name="resultado" value="">
+                    <button class="boton-enviar" id="submit">Enviar</button>
+                    <p class="suma-captcha" id="captchaIncorrecto"></p>
+                </div>
+            </form>
+        </section>
+    </div>
+        <footer>Todos los derechos reservados</footer>
+    <script type="text/javascript" src="js/menudesplegable.js"></script>
+    <script type="text/javascript" src="js/gimnasia.js"></script>
+</body>
+</html>

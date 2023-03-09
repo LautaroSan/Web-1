@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimos Campeones</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gimnasia Artística</h1>
+    </header>
+    <button class="boton-navegacion">MENU</button>
+        <nav>
+                <a href="index.html">Inicio</a>
+                <a href="ultimoscampeones.html">Últimos Campeones Olimpicos</a>
+                <a href="suscripcion.html">Suscripción</a>
+        </nav>
+        <h2>Últimos campeones olímpicos por aparatos. </h2>
+        <div class="filter">
+            <input type="text" id="filtro" placeholder="ingrese el filtro de busqueda">
+        </div>
+        <section class="contenedor-tabla">
+            <table id="tabla">
+                <thead>
+                    <th >Año</th>
+                    <th colspan="6">Aparato</th>
+                    
+                </thead>
+                    <tr>
+                        <td></td>
+                        <th>Suelo</th>
+                        <th>Arzones</th>
+                        <th>Anillas</th>
+                        <th>Salto</th>
+                        <th>Paralelas</th>
+                        <th>Barra</th>
+                        <th>Eliminar</th>
+                        <th>Editar</th>
+                    </tr>
+                    <tbody id="tbody">
+
+                    </tbody>               
+            </table>
+           
+        </section>
+        <div class="pagination-btns"> 
+            <button id="btn-before">Anterior</button> 
+            <button id="btn-after">Siguiente</button>
+        </div>
+    <section class="contenedor-formulario-de-carga">
+        
+    </section>
+    <footer> Todos los derechos reservados</footer>
+    <script type="text/javascript" src="js/cargar-tabla.js"></script>
+    <script type="text/javascript" src="js/menudesplegable.js"></script>
+</body>
+</html>

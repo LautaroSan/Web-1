@@ -1,0 +1,217 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(../images/fondo.jpg);
+    margin: 8px 0;
+}
+
+header, nav{
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(250, 242, 231);
+}
+.boton-navegacion{
+   background-color: black;
+   color: white;
+   margin-left: 10px;
+   height: 35px;
+}
+
+nav {
+    list-style: none;
+    display: none;
+    flex-direction: column; /*lista en vertical*/
+    justify-content: center;
+    margin-left: 10px;
+}
+nav.mostrar{
+    display: flex; /* clase que muestra o deja de msotrar el menu de navegacion a traves de js */
+}
+
+nav a{
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(250, 242, 231);
+}
+
+nav :hover {
+    background-color: rgb(114, 114, 114);
+}
+@media only screen and (min-width: 650px){
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .boton-navegacion{
+        display: none;
+    }
+    body{
+        margin: 8px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+}
+.texto-principal{
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgb(156, 155, 155);
+}
+
+.texto-principal p{
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.3rem;
+}
+.lista-actividades{
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+.contenedor-suelo-y-anillas, .contenedor-barra-y-paralelas {
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: stretch;
+justify-content: space-around;
+}
+.contenedor-suelo-y-anillas img, .contenedor-barra-y-paralelas img {
+    display: block;
+    margin: auto;
+}
+@media only screen and (min-width: 650px){
+    .contenedor-suelo-y-anillas, .contenedor-barra-y-paralelas{
+        flex-direction: row;
+    }
+}
+h2 {
+    text-align: center;
+}
+
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+}
+article {
+    background-color: rgb(212, 209, 209);
+    width: 90%;
+    border: solid black 1px;
+    margin: 30px 10px 5px 10px;
+    padding: 10px;
+}
+
+table{
+    width: 97%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 9px;
+    background-color:rgb(224, 216, 216);
+}
+
+th {
+    width: 100px;
+}
+
+th, td, tr{
+    border: 2px solid black;
+    padding: 3px;
+}
+@media only screen and (min-width: 650px) {
+    table{
+        font-size: 15px;
+        width: 80%;
+    }
+    th, td, tr{
+        padding: 10px;
+    }
+}
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
+}
+
+.formularios {
+    background-color: rgb(209, 207, 207);
+    width: 95%;
+    margin: 10px;
+    padding: 5px;
+}
+
+form{
+    margin: 5px;
+    padding: 5px;
+    border: solid black 1px;
+    
+}
+.datos-personales div{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-enviar{
+    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+}
+.suma-captcha{
+    font-size:15px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+.checkboxs{
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2px   
+}
+.filter input{
+    width: 75%;
+}
+@media only screen and (min-width: 650px){
+    .formularios{
+        width: 40%;
+    }
+}
+.formulario-tabla{
+    display: flex;
+    flex-direction: column;
+}
+.formulario-tabla input,button{
+    margin-bottom: 3px;
+}
+@media only screen and (min-width:650px){
+    .formulario-tabla{
+        width: 40%;
+    }
+    .contenedor-formulario-de-carga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter input{
+        width: 30%;
+    }
+}
+.filadestacada{
+    background-color: aquamarine;
+}
+.pagination-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
